@@ -24,6 +24,8 @@
     pkgs.tmux
     pkgs.neovim
     pkgs.waybar
+    pkgs.kdePackages.dolphin
+    pkgs.rofi
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -74,16 +76,33 @@
 	enable = true;
 	settings = {
 	 "$mod" = "SUPER";
-	 "$terminal" = "alacritty";
+	 "$terminal" = "kitty";
+   "$file" = "dolphin";
 	 exec-once = "waybar";
 	 bind = 
 	 [
-	   # Command mapping
+	   # App shortcuts
 	   "$mod, F, exec, firefox"
-	   "$mod, Q, killactive"
 	   "$mod, T, exec, $terminal"
+     "$mod, E, exec, $file"
+     # util
+     "$mod, A, exec, pkill -x rofi"
+	   "$mod, Q, killactive"
+     "$mod, L, exec, hyprlock"
+     "Ctrl+Alt, W, exec, killall waybar || waybar" # toggle waybar
+     # workspaces
 	   "$mod, 1, workspace, 1"
-	   "$mod, 2, workspace, 2"
+	   "$mod, 3, workspace, 3"
+     "$mod, 4, workspace, 4"
+     "$mod, 5, workspace, 5"
+     "$mod, 6, workspace, 6"
+     "$mod, 7, workspace, 7"
+     "$mod, 8, workspace, 8"
+     "$mod, 9, workspace, 9"
+     "$mod, 0, workspace, 10"
+     "$mod+Ctrl+Alt, Right, movetoworkspace, r+1" #move window to relative right
+     "$mod+Ctrl+Alt, Left, movetoworkspace, r-1" #move window to relative left
+
 	 ];
 	};
   };

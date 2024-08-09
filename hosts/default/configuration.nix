@@ -92,7 +92,7 @@
     wget
     git
     sl
-    kitty
+    qt5.qtwayland
   ];
 
   # System state version
