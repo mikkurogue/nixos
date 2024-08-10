@@ -35,16 +35,22 @@
     LC_TIME = "fi_FI.UTF-8";
   };
 
-  # Enable the X11 windowing system.
+  # KDE as fallback
   services.xserver.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
+
+  # Remove some optional deps from KDE
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    plasma-browser-integration
+    konsole
+    oxygen
+  ];
 
   # Configure keymap in X11
-  services.xserver = {
-    layout = "fi";
-    xkbVariant = "winkeys";
-  };
+  services.xserver.xkb.layout = "fi";
+  services.xserver.xkb.variant = "winkeys";
+
 
   # Configure console keymap
   console.keyMap = "fi";
