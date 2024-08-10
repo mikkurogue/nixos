@@ -27,6 +27,7 @@
     pkgs.kdePackages.dolphin
     pkgs.rofi
     pkgs.wlogout
+    pkgs.nwg-look
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -90,7 +91,7 @@
 	   "$mod, T, exec, $terminal"
      "$mod, E, exec, $file"
      # util
-     "$mod, A, exec, pkill -x rofi"
+     "$mod, A, exec, rofi -show drun"
 	   "$mod, Q, killactive"
      "$mod, L, exec, hyprlock"
      "Ctrl+Alt, W, exec, killall waybar || waybar" # toggle waybar
@@ -107,7 +108,10 @@
      "$mod+Ctrl+Alt, Right, movetoworkspace, r+1" #move window to relative right
      "$mod+Ctrl+Alt, Left, movetoworkspace, r-1" #move window to relative left
 
+     
 	 ];
+   # Font stuff
+   exec = ""
 	};
   };
 

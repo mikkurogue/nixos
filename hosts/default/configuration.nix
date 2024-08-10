@@ -77,6 +77,10 @@
     packages = with pkgs; [ ];
   };
 
+  fonts.packages = with pkgs; [
+  (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+];
+
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
