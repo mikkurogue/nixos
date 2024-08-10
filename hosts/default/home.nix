@@ -26,6 +26,7 @@
     pkgs.waybar
     pkgs.kdePackages.dolphin
     pkgs.rofi
+    pkgs.wlogout
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -49,6 +50,9 @@
     home.file = {
     ".config/waybar/config" = {
       source = ../../configs/waybar/config.json;
+    };
+    ".config/wlogout/layout" = {
+      source = ../../configs/wlogout/layout;
     };
   };
 

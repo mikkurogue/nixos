@@ -45,6 +45,7 @@
     plasma-browser-integration
     konsole
     oxygen
+    kate
   ];
 
   # Configure keymap in X11
