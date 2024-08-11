@@ -29,6 +29,8 @@
     pkgs.wlogout
     pkgs.nwg-look
     pkgs.fastfetch
+    pkgs.starship
+    pkgs.hyprshot
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -120,6 +122,7 @@
      "$mod, w, togglefloating" # toggle flaoting
      "$mod, g, togglegroup" #group
      "Alt, Return, fullscreen" #fullscreen the window
+     "Shift+$mod, S, exec, hyprshot -m region"
      "Ctrl+Alt, W, exec, killall waybar || waybar" 
      # workspaces
 	   "$mod, 1, workspace, 1"

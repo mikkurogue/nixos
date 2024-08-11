@@ -40,11 +40,6 @@ if test -d ~/Applications/depot_tools
 end
 
 
-## Starship prompt
-if status --is-interactive
-   source ("/usr/bin/starship" init fish --print-full-init | psub)
-end
-
 if test -d /home/linuxbrew/.linuxbrew # Linux
 	set -gx HOMEBREW_PREFIX "/home/linuxbrew/.linuxbrew"
 	set -gx HOMEBREW_CELLAR "$HOMEBREW_PREFIX/Cellar"
