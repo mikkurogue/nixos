@@ -8,7 +8,7 @@
     ];
 
   # Bootloader configuration
-  boot.loader.systemd-bood-enable = true;
+  boot.loader.systemd-bood.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   
 
