@@ -4,7 +4,7 @@
     "spacing": 0, 
     "margin-top": 4,
     "reload_style_on_change": true,
-    "modules-left": ["clock", "clock#date", "custom/updates"],
+    "modules-left": ["clock", "clock#date", "custom/updates",  "custom/spotify" ],
     "modules-center": ["hyprland/workspaces", "hyprland/window", "wlr/taskbar"],
     "modules-right": ["tray", "cpu", "memory", "pulseaudio", "custom/power"],
     "custom/updates": {
@@ -73,6 +73,20 @@
     "tooltip": true,
     "on-click": "wlogout"
 },
+"custom/spotify": {
+    "exec": "mediaplayer.py --player spotify",
+    "format": " {}",
+    "rotate": 0,
+    "return-type": "json",
+    "on-click": "playerctl play-pause --player spotify",
+    "on-click-right": "playerctl next --player spotify",
+    "on-click-middle": "playerctl previous --player spotify",
+    "on-scroll-up": "volumecontrol.sh -p spotify i",
+    "on-scroll-down": "volumecontrol.sh -p spotify d",
+    "max-length": 100,
+    "escape": true,
+    "tooltip": true,
+  },
    "sort-by-number": true
 
 }

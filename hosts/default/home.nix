@@ -59,6 +59,9 @@
     ".config/waybar/style.css" = {
       source = ../../configs/waybar/style.css;
     };
+    ".config/waybar/modules/spotify.jsonc" = {
+      source = ../../configs/waybar/modules/spotify.jsonc;
+    };
     ".config/wlogout/layout" = {
       source = ../../configs/wlogout/layout;
     };
