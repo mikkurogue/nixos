@@ -32,6 +32,8 @@
     pkgs.starship
     pkgs.hyprshot
     pkgs.eza
+    pkgs.hyprland-autoname-workspaces
+    pkgs.xdg-desktop-portal-hyprland
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -113,6 +115,10 @@
     "waybar"
     "discord"
    ];
+   exec = [
+    "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
+    "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
+   ];
 	 bind = 
 	 [
 	   # App shortcuts
@@ -146,7 +152,10 @@
      "$mod+Ctrl, Left, workspace, r-1"
 	 ];
    # Env
-   env = "QT_WAYLAND_DISABLE_WINDOWDECORATION,1";
+   env = [
+     "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
+     "QT_QPA_PLATFORMTHEME,qt6ct"
+   ];
    # Input
    input = {
     kb_layout = "fi";
@@ -161,6 +170,25 @@
    # Other stuff
    xwayland = {
     force_zero_scaling = true;
+   };
+
+   # General
+   general = {
+    gaps_in = 3;
+    gaps_out = 8;
+    border_size = 2;
+    layout = "dwindle";
+    resize_on_border = true;
+   };
+
+   decoration = {
+    rounding = 4;
+   };
+
+   #Group stuff
+   group = {
+    "col.border_active" = "rgba(ca9ee6ff) rgba(f2d5cfff) 45deg";
+    "col.border_inactive" = "rgba(b4befecc) rgba(6c7086cc) 45deg";
    };
 
    # Animations
@@ -183,14 +211,6 @@
       "fade, 1, 10, default"
       "workspaces, 1, 5, wind"
     ];
-    
-    
-    
-    
-    
-    
-    
-    
    };
 	};
 };

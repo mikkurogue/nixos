@@ -107,6 +107,7 @@
     git
     sl
     qt5.qtwayland
+    kdePackages.qt6ct
   ];
 
   # System state version
