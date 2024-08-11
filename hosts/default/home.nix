@@ -28,6 +28,8 @@
     pkgs.rofi
     pkgs.wlogout
     pkgs.nwg-look
+    pkgs.fastfetch
+    pkgs.fish
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -57,6 +59,12 @@
     };
     ".config/wlogout/layout" = {
       source = ../../configs/wlogout/layout;
+    };
+    ".config/kitty/kitty.conf" = {
+      source = ../../configs/kitty/kitty.conf;
+    };
+    ".config/kitty/theme.conf" = {
+      source = ../../configs/kitty/theme.conf;
     };
   };
 
@@ -106,6 +114,7 @@
      "Ctrl+Alt, W, exec, killall waybar || waybar" 
      # workspaces
 	   "$mod, 1, workspace, 1"
+     "$mod, 2, workspace, 2"
 	   "$mod, 3, workspace, 3"
      "$mod, 4, workspace, 4"
      "$mod, 5, workspace, 5"
