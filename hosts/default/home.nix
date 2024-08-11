@@ -49,8 +49,11 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
     home.file = {
-    ".config/waybar/config" = {
+    ".config/waybar/config.json" = {
       source = ../../configs/waybar/config.json;
+    };
+    ".config/waybar/style.css" = {
+      source = ../../configs/waybar/style.css;
     };
     ".config/wlogout/layout" = {
       source = ../../configs/wlogout/layout;
@@ -94,7 +97,6 @@
      "$mod, A, exec, rofi -show drun"
 	   "$mod, Q, killactive"
      "$mod, L, exec, hyprlock"
-     "Ctrl+Alt, W, exec, killall waybar || waybar" # toggle waybar
      "$mod, w, togglefloating" # toggle flaoting
      "$mod, g, togglegroup" #group
      "Alt, Return, fullscreen" #fullscreen the window
