@@ -79,7 +79,7 @@
   };
 
   fonts.packages = with pkgs; [
-  (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+  (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "JetBrainsMono" ]; })
 ];
 
   home-manager = {
@@ -123,6 +123,7 @@
     gsettings-qt
     libnotify
     hyprpaper
+    pavucontrol
   ];
 
   # System state version
