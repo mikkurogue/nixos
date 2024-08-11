@@ -52,9 +52,8 @@
     # '')
   ];
 
-  # Home Manager is pretty good at managing dotfiles. The primary way to manage
-  # plain files is through 'home.file'.
     home.file = {
+      # Waybar
     ".config/waybar/config.jsonc" = {
       source = ../../configs/waybar/config.jsonc;
     };
@@ -64,9 +63,11 @@
     ".config/waybar/modules/spotify.jsonc" = {
       source = ../../configs/waybar/modules/spotify.jsonc;
     };
+    # Wlogout
     ".config/wlogout/layout" = {
       source = ../../configs/wlogout/layout;
     };
+    # Kitty
     ".config/kitty/kitty.conf" = {
       source = ../../configs/kitty/kitty.conf;
     };
@@ -82,6 +83,9 @@
     };
     ".config/fish/fish_variables" = {
       source = ../../configs/fish/fish_variables;
+    };
+    ".config/rofi/config.rasi" = {
+      source = ../../configs/rofi/config.rasi;
     };
   };
 
@@ -212,6 +216,12 @@
       "workspaces, 1, 5, wind"
     ];
    };
+
+   # Window rules
+   windowrulev2 = [
+    "float,class:^(Rofi)$"
+    "pin,class:^(Rofi)$"
+   ];
 	};
 };
 
