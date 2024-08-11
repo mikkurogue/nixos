@@ -19,6 +19,7 @@
 	      ./modules/packages/vscode.nix
         ./modules/packages/zed.nix
         ./modules/packages/discord.nix
+        ./modules/packages/spotify.nix
         inputs.home-manager.nixosModules.default
       ];
     };

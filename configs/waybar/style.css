@@ -51,6 +51,9 @@ window#waybar.hidden {
 #clock,
 #cpu,
 #memory,
+#custom-power,
+#tray,
+#taskbar,
 #pulseaudio {
     padding: 0 15px;
     margin-right: 8px;
@@ -60,7 +63,42 @@ window#waybar.hidden {
 }
 
 /* Individual Widget Styles */
-/* In order of the placement on screen */
+#taskbar button {
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0px;
+    border-radius: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 0px;
+    animation: tb_normal 20s ease-in-out 1;
+}
+
+#taskbar button.active {
+    background: #c9a0dc;
+    color: #c9a0dc;
+    margin-left: 4px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-right: 4px;
+    animation: tb_active 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#taskbar button:hover {
+    animation: tb_hover 20s ease-in-out 1;
+    transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+#tray menu * {
+    min-height: 16px;
+}
+
+#tray menu separator {
+    min-height: 10px;
+}
 
 /* Clock instance which displays the date */
 #clock.date {
@@ -95,4 +133,9 @@ window#waybar.hidden {
 #clock { 
     color: #c4a7e7;
     margin-right: 0;
+}
+
+#custom-power {
+    color: #eb6f92;
+    margin-right: 8px;
 }
