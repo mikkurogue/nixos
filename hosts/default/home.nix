@@ -221,6 +221,18 @@
    windowrulev2 = [
     "float,class:^(Rofi)$"
     "pin,class:^(Rofi)$"
+    "opacity 0.70 0.70,class:^(Spotify)$"
+    "opacity 0.80 0.80,class:^(kitty)$"
+    "opacity 0.90 0.90,class:^(firefox)$"
+    "opacity 0.80 0.80,class:^(Code)$"
+    "opacity 0.80 0.80,class:^(discord)$"
+   ];
+
+   # Layer rules
+   layerrule = [
+    "blur, rofi"
+    "ignorezero, rofi"
+    "blur, logout_dialog"
    ];
 	};
 };
