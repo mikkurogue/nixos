@@ -29,7 +29,6 @@
     pkgs.wlogout
     pkgs.nwg-look
     pkgs.fastfetch
-    pkgs.fish
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -65,6 +64,16 @@
     };
     ".config/kitty/theme.conf" = {
       source = ../../configs/kitty/theme.conf;
+    };
+    # Fish cfg
+     ".config/fish/config.fish" = {
+      source = ../../configs/fish/config.fish;
+    };
+    ".config/fish/fish_plugins" = {
+      source = ../../configs/fish/fish_plugins;
+    };
+    ".config/fish/fish_variables" = {
+      source = ../../configs/fish/fish_variables;
     };
   };
 
