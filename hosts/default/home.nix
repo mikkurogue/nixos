@@ -31,6 +31,7 @@
     pkgs.starship
     pkgs.hyprshot
     pkgs.eza
+    pkgs.playerctl
   ];
 
     home.file = {
@@ -43,6 +44,16 @@
     };
     ".config/waybar/modules/spotify.jsonc" = {
       source = ../../configs/waybar/modules/spotify.jsonc;
+    };
+    # Hyprlock
+     ".config/hypr/hyprlock.conf" = {
+      source = ../../configs/hypr/hyprlock.conf;
+    };
+     ".config/hypr/profile_picture.jpg" = {
+      source = ../../configs/hypr/profile_picture.jpg;
+    };
+     ".config/hypr/arch_wp.png" = {
+      source = ../../configs/hypr/arch_wp.png;
     };
     # Hyprland autoname workspaces
     ".config/hyprland-autoname-workspaces/config.toml" = {

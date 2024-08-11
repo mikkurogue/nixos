@@ -112,6 +112,7 @@
     xdg-desktop-portal
     xdg-desktop-portal-gnome
     xdg-desktop-portal-hyprland
+    hyprlock
     gtk3
     gtk4
     gtk2
@@ -121,6 +122,7 @@
     rose-pine-gtk-theme
     nwg-look
     gsettings-qt
+    libnotify
   ];
 
   # System state version
