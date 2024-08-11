@@ -21,6 +21,7 @@
         ./modules/packages/discord.nix
         ./modules/packages/spotify.nix
         ./modules/glib-schema-fix.nix
+        ./modules/languages.nix
         inputs.home-manager.nixosModules.default
       ];
     };
