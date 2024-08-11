@@ -55,10 +55,6 @@
      ".config/hypr/arch_wp.png" = {
       source = ../../configs/hypr/arch_wp.png;
     };
-    # Hyprland autoname workspaces
-    ".config/hyprland-autoname-workspaces/config.toml" = {
-      source = ../../configs/hyprland-autoname-workspaces/config.toml;
-    };
     # Wlogout
     ".config/wlogout/layout" = {
       source = ../../configs/wlogout/layout;
