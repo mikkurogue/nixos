@@ -151,6 +151,10 @@
      "$mod+Ctrl, Right, workspace, r+1" # move to relative workspaces
      "$mod+Ctrl, Left, workspace, r-1"
 	 ];
+   bindm = [
+    "$mod, mouse:272, movewindow"
+    "$mod, mouse:273, resizewindow"
+   ];
    # Env
    env = [
      "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
