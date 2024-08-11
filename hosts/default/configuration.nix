@@ -108,7 +108,6 @@
     sl
     qt5.qtwayland
     kdePackages.qt6ct
-    hyprland-autoname-workspaces
     xdg-desktop-portal
     xdg-desktop-portal-gnome
     xdg-desktop-portal-hyprland
