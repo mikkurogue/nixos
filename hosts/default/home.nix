@@ -44,6 +44,10 @@
     ".config/waybar/modules/spotify.jsonc" = {
       source = ../../configs/waybar/modules/spotify.jsonc;
     };
+    # Hyprland autoname workspaces
+    ".config/hyprland-autoname-workspaces/config.toml" = {
+      source = ../../configs/hyprland-autoname-workspaces/config.toml;
+    };
     # Wlogout
     ".config/wlogout/layout" = {
       source = ../../configs/wlogout/layout;

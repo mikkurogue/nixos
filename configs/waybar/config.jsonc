@@ -44,11 +44,11 @@
     "icon-size": 20,
     "rotate": 0,
     "spacing": 5,
-    "show-passive-items": true,
+    "show-passive-items": true
   },
     "hyprland/workspaces": {
-        "format": "{icon}",
-        "on-click": "activate",
+    "format": "{name}",
+    "on-click": "activate",
 	"active-only": false,
 	"all-outputs": true
    },
