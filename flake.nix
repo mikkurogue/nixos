@@ -20,6 +20,7 @@
         ./modules/packages/zed.nix
         ./modules/packages/discord.nix
         ./modules/packages/spotify.nix
+        ./modules/glib-schema-fix.nix
         inputs.home-manager.nixosModules.default
       ];
     };

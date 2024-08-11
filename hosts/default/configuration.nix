@@ -108,6 +108,14 @@
     sl
     qt5.qtwayland
     kdePackages.qt6ct
+    pkgs.hyprland-autoname-workspaces
+    pkgs.xdg-desktop-portal
+    pkgs.xdg-desktop-portal-gnome
+    pkgs.xdg-desktop-portal-hyprland
+    gnome.gnome-settings-daemon
+    glib
+    rose-pine-gtk-theme
+    nwg-look
   ];
 
   # System state version
