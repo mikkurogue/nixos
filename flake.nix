@@ -16,8 +16,9 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/default/configuration.nix
-	      ./modules/editors/vscode.nix
-        ./modules/editors/zed.nix
+	      ./modules/packages/vscode.nix
+        ./modules/packages/zed.nix
+        ./modules/packages/discord.nix
         inputs.home-manager.nixosModules.default
       ];
     };
