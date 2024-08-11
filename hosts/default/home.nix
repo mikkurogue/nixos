@@ -45,6 +45,13 @@
     ".config/waybar/modules/spotify.jsonc" = {
       source = ../../configs/waybar/modules/spotify.jsonc;
     };
+    #Hyprpaper
+    ".config/hypr/hyprpaper.conf" = {
+      source = ../../configs/hypr/hyprpaper.conf;
+    };
+    ".config/hypr/kath.png" = {
+      source = ../../configs/hypr/kath.png;
+    };
     # Hyprlock
      ".config/hypr/hyprlock.conf" = {
       source = ../../configs/hypr/hyprlock.conf;
@@ -110,6 +117,7 @@
 	 exec-once = [
     "waybar"
     "discord"
+    "hyprpaper"
    ];
    exec = [
     "gsettings set org.gnome.desktop.interface gtk-theme 'rose-pine'"

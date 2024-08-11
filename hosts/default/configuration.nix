@@ -122,6 +122,7 @@
     nwg-look
     gsettings-qt
     libnotify
+    hyprpaper
   ];
 
   # System state version
