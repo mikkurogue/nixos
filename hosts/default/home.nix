@@ -95,6 +95,9 @@
 	   "$mod, Q, killactive"
      "$mod, L, exec, hyprlock"
      "Ctrl+Alt, W, exec, killall waybar || waybar" # toggle waybar
+     "$mod, w, togglefloating" # toggle flaoting
+     "$mod, g, togglegroup" #group
+     "Alt, Return, fullscreen" #fullscreen the window
      # workspaces
 	   "$mod, 1, workspace, 1"
 	   "$mod, 3, workspace, 3"
@@ -107,13 +110,29 @@
      "$mod, 0, workspace, 10"
      "$mod+Ctrl+Alt, Right, movetoworkspace, r+1" #move window to relative right
      "$mod+Ctrl+Alt, Left, movetoworkspace, r-1" #move window to relative left
-
-     
+     "Alt, Tab, movefocus, d"
+     "$mod+Ctrl, Right, workspace, r+1" # move to relative workspaces
+     "$mod+Ctrl, Left, workspace, r-1"
 	 ];
+   # Env
+   env = "QT_WAYLAND_DISABLE_WINDOWDECORATION,1";
+   # Input
+   input = {
+    kb_layout = "fi";
+    follow_mouse = 1;
+    force_no_accel = 1;
+    sensitivity = "-0.89";
+   };
+   # Monitors
+   monitor= ",2560x1440@144, auto, 1";
    # Font stuff
    #exec = "";
+   # Other stuff
+   xwayland = {
+    force_zero_scaling = true;
+   };
 	};
-  };
+};
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
